@@ -47,8 +47,8 @@ document.onkeydown = function(e){
 function getDilbert(date) {
 	var baseurl = 'https://dilbert.com/strip/' + date;
 
-	var corsProxy = 'https://cors.io/?'+baseurl;
-	//var corsProxy = 'https://cors-anywhere.herokuapp.com/'+baseurl;
+	//var corsProxy = 'https://cors.io/?'+baseurl;
+	var corsProxy = 'https://cors-anywhere.herokuapp.com/'+baseurl;
 	url = corsProxy;
 
 	var xhttp = new XMLHttpRequest();
@@ -68,7 +68,7 @@ function getDilbert(date) {
 	    }
 	};
 	xhttp.open("GET", url, true);
-	//xhttp.setRequestHeader("x-requested-with", 'Dilbert');
+	xhttp.setRequestHeader("x-requested-with", 'Dilbert');
 	xhttp.send();
 }
 
