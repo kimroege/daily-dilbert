@@ -50,7 +50,8 @@ function getDilbert(date) {
 	//var corsProxy = 'https://cors.io/?'+baseurl;
 	//var corsProxy = 'https://cors-anywhere.herokuapp.com/'+baseurl;
 	// var corsProxy = 'https://cors.bridged.cc/'+baseurl;
-	var corsProxy = 'https://proxy.cors.sh/'+baseurl;
+	//var corsProxy = 'https://proxy.cors.sh/'+baseurl;
+	var corsProxy = 'https://api.allorigins.win/raw?url='+baseurl;
 	url = corsProxy;
 
 	var xhttp = new XMLHttpRequest();
